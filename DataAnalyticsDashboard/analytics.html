@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Analytics</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="sidebar">
+
+<h2>
+Analytics
+</h2>
+
+
+<ul>
+
+<li onclick="window.location='dashboard.html'">
+Dashboard
+</li>
+
+
+<li onclick="window.location='upload.html'">
+Upload Data
+</li>
+
+
+<li>
+Analytics
+</li>
+
+
+<li>
+Reports
+</li>
+
+
+<li onclick="logout()">
+Logout
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="main">
+
+
+<header>
+
+<h1>
+📈 Business Analytics
+</h1>
+
+</header>
+
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Total Revenue</h3>
+
+<h1>
+₹2,45,000
+</h1>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Average Sales</h3>
+
+<h1>
+₹18,500
+</h1>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Highest Sale</h3>
+
+<h1>
+₹65,000
+</h1>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Lowest Sale</h3>
+
+<h1>
+₹2,500
+</h1>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="chart">
+
+
+<h2>
+Monthly Performance
+</h2>
+
+
+<canvas id="analyticsChart"></canvas>
+
+
+</div>
+
+
+
+
+
+<div class="table-box">
+
+
+<h2>
+Product Analysis
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Product
+</th>
+
+<th>
+Sales
+</th>
+
+<th>
+Profit
+</th>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Laptop
+</td>
+
+<td>
+65000
+</td>
+
+<td>
+12000
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Mobile
+</td>
+
+<td>
+18000
+</td>
+
+<td>
+5000
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Monitor
+</td>
+
+<td>
+12000
+</td>
+
+<td>
+3000
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

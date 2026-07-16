@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Analytics Dashboard</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<!-- Chart Library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- =====================
+SIDEBAR
+===================== -->
+
+
+<div class="sidebar">
+
+
+<h2>
+<i class="fa-solid fa-chart-line"></i>
+Analytics
+
+<li onclick="window.location='upload.html'">
+
+<i class="fa fa-upload"></i>
+
+Upload Data
+
+</li>
+</h2>
+
+
+<ul>
+
+<li onclick="window.location='analytics.html'">
+
+<i class="fa fa-chart-line"></i>
+
+Analytics
+
+</li>
+
+<li>
+<i class="fa fa-home"></i>
+Dashboard
+</li>
+
+
+<li>
+<i class="fa fa-chart-column"></i>
+Analytics
+</li>
+
+
+<li>
+<i class="fa fa-file"></i>
+Reports
+</li>
+
+
+<li>
+<i class="fa fa-users"></i>
+Customers
+</li>
+
+
+<li>
+<i class="fa fa-gear"></i>
+Settings
+</li>
+
+
+<li onclick="logout()">
+
+<i class="fa fa-right-from-bracket"></i>
+
+Logout
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<!-- =====================
+MAIN CONTENT
+===================== -->
+
+
+<div class="main">
+
+
+<header>
+
+
+<h1>
+📊 Data Analytics Dashboard
+</h1>
+
+
+</header>
+
+
+
+
+
+<!-- =====================
+CARDS
+===================== -->
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h3>Total Sales</h3>
+
+<h1>₹2,45,000</h1>
+
+<p>+12% Growth</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Total Orders</h3>
+
+<h1>1,245</h1>
+
+<p>Monthly Orders</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Total Customers</h3>
+
+<h1>845</h1>
+
+<p>Active Users</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Total Profit</h3>
+
+<h1>₹82,450</h1>
+
+<p>Net Profit</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- =====================
+CHARTS
+===================== -->
+
+
+<div class="charts">
+
+
+
+<div class="chart">
+
+
+<h2>Sales Analysis</h2>
+
+
+<canvas id="salesChart"></canvas>
+
+
+</div>
+
+
+
+
+
+<div class="chart">
+
+
+<h2>Product Category</h2>
+
+
+<canvas id="productChart"></canvas>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- =====================
+TABLE
+===================== -->
+
+
+<div class="table-box">
+
+
+<h2>
+Recent Transactions
+</h2>
+
+
+
+<table>
+
+
+
+<tr>
+
+<th>ID</th>
+
+<th>Customer</th>
+
+<th>Product</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>101</td>
+
+<td>Rahul</td>
+
+<td>Laptop</td>
+
+<td>₹65000</td>
+
+<td>Completed</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<td>102</td>
+
+<td>Priya</td>
+
+<td>Mobile</td>
+
+<td>₹18000</td>
+
+<td>Pending</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<td>103</td>
+
+<td>Amit</td>
+
+<td>Monitor</td>
+
+<td>₹12000</td>
+
+<td>Completed</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<td>104</td>
+
+<td>Sneha</td>
+
+<td>Keyboard</td>
+
+<td>₹2500</td>
+
+<td>Completed</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
